@@ -101,7 +101,7 @@ pre[class*=language-] {
 }
 
 .token.punctuation {
-    color: #c792ea
+    color: #1c9bef
 }
 
 .namespace {
@@ -141,7 +141,7 @@ pre[class*=language-] {
 
 .token.doctype,
 .token.selector {
-    color: #c792ea
+    color: #1c9bef;
 }
 
 .token.attr-name,
