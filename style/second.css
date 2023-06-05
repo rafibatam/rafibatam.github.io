@@ -101,7 +101,7 @@ pre[class*=language-] {
 }
 
 .token.punctuation {
-    color: #1c9bef
+    color: #c792ea
 }
 
 .namespace {
@@ -125,7 +125,7 @@ pre[class*=language-] {
 }
 
 .token.boolean {
-    color: #1c9bef
+    color: #f6889b
 }
 
 .token.number {
@@ -141,7 +141,7 @@ pre[class*=language-] {
 
 .token.doctype,
 .token.selector {
-    color: #1c9bef;
+    color: #c792ea
 }
 
 .token.attr-name,
