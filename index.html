@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="system">
+
+<head>
+    <title>Muhammad Rafi's Personal Website</title>
+
+    <meta charset="utf-8">
+    <meta name="description" property="og:description" content="Hello World!">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="theme-color" content="#CC0088">
+
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="fonts/favicon.svg">
+
+    <meta name="generator" content="Astro v2.0.15">
+    <meta property="og:site_name" content="Muhammad Rafi's Personal Website">
+    <meta property="og:title" content="Muhammad Rafi's Personal Website">
+    <meta name="author" content="Muhammad Rafi Bahrur Rizki">
+
+    <!-- Google -->
+    <meta itemprop="name" content="Muhammad Rafi's Personal Website" />
+    <meta itemprop="description"
+        content="
+  Hello! My name is Muhammad Rafi Bahrur Rizki and I enjoy programming languages. My interest in programming languages started in 2013 when I decided to develop an online personal game server using PHP and MySQL. Would you like to learn more about me? Please visit my personal website." />
+    <meta itemprop="image" content="<%- require('./images/rafi.png') %>" />
+
+    <!-- Facebook -->
+    <meta property="og:url" content="https://rafibahrur.my.id/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Muhammad Rafi's Personal Website" />
+    <meta property="og:description"
+        content="
+Hello! My name is Muhammad Rafi Bahrur Rizki and I enjoy programming languages. My interest in programming languages started in 2013 when I decided to develop an online personal game server using PHP and MySQL. Would you like to learn more about me? Please visit my personal website." />
+    <meta property="og:image" content="<%- require('./images/rafi.png') %>" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Muhammad Rafi's Personal Website" />
+    <meta name="twitter:description"
+        content="
+  Hello! My name is Muhammad Rafi Bahrur Rizki and I enjoy programming languages. My interest in programming languages started in 2013 when I decided to develop an online personal game server using PHP and MySQL. Would you like to learn more about me? Please visit my personal website." />
+    <meta name="twitter:image" content="<%- require('./images/rafi.png') %>" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style/first.css" rel="stylesheet">
+    <link href="style/second.css" rel="stylesheet">
+</head>
+
+<body>
+    <svg aria-hidden="true" class="watermark-bear" viewBox="0 0 969 955" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="161.191" cy="320.191" r="133.191" stroke="currentColor" stroke-width="20" />
+        <circle cx="806.809" cy="320.191" r="133.191" stroke="currentColor" stroke-width="20" />
+        <circle cx="695.019" cy="587.733" r="31.4016" fill="currentColor" stroke-width="20" />
+        <circle cx="272.981" cy="587.733" r="31.4016" fill="currentColor" stroke-width="20" />
+        <path
+            d="M564.388 712.083C564.388 743.994 526.035 779.911 483.372 779.911C440.709 779.911 402.356 743.994 402.356 712.083C402.356 680.173 440.709 664.353 483.372 664.353C526.035 664.353 564.388 680.173 564.388 712.083Z"
+            fill="currentColor" />
+        <rect x="310.42" y="448.31" width="343.468" height="51.4986" fill="#FF1E1E" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M745.643 288.24C815.368 344.185 854.539 432.623 854.539 511.741H614.938V454.652C614.938 433.113 597.477 415.652 575.938 415.652H388.37C366.831 415.652 349.37 433.113 349.37 454.652V511.741L110.949 511.741C110.949 432.623 150.12 344.185 219.845 288.24C289.57 232.295 384.138 200.865 482.744 200.865C581.35 200.865 675.918 232.295 745.643 288.24Z"
+            fill="currentColor" />
+    </svg>
+    <nav class="flex justify-between bg-surface-alpha sticky top-0 left-0 z-10 p-2">
+        <a class="w-11 h-11 text-text-1 grid place-items-center hover:bg-surface-4 rounded-md" href="/">
+            <svg class="w-9" viewBox="0 0 969 955" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="161.191" cy="320.191" r="133.191" stroke="currentColor" stroke-width="20" />
+                <circle cx="806.809" cy="320.191" r="133.191" stroke="currentColor" stroke-width="20" />
+                <circle cx="695.019" cy="587.733" r="31.4016" fill="currentColor" />
+                <circle cx="272.981" cy="587.733" r="31.4016" fill="currentColor" />
+                <path
+                    d="M564.388 712.083C564.388 743.994 526.035 779.911 483.372 779.911C440.709 779.911 402.356 743.994 402.356 712.083C402.356 680.173 440.709 664.353 483.372 664.353C526.035 664.353 564.388 680.173 564.388 712.083Z"
+                    fill="currentColor" />
+                <rect x="310.42" y="448.31" width="343.468" height="51.4986" fill="#FF1E1E" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M745.643 288.24C815.368 344.185 854.539 432.623 854.539 511.741H614.938V454.652C614.938 433.113 597.477 415.652 575.938 415.652H388.37C366.831 415.652 349.37 433.113 349.37 454.652V511.741L110.949 511.741C110.949 432.623 150.12 344.185 219.845 288.24C289.57 232.295 384.138 200.865 482.744 200.865C581.35 200.865 675.918 232.295 745.643 288.24Z"
+                    fill="currentColor" />
+            </svg>
+            <span class="sr-only">rafibahrur.my.id</span>
+        </a>
+    </nav>
+    <header class="w-feature max-w-full mx-auto">
+        <div class="w-full aspect-[3/1] bg-surface-4" style="overflow: hidden;">
+            <img style="margin:-20% 0px -10% 0px;" src="images/coding.png">
+        </div>
+        <div class="w-content max-w-full mv-0 mx-auto grid gap-2 px-4">
+            <div class="relative flex justify-end items-center min-h-half-avatar py-2">
+                <picture>
+                    <a href="/images/profile.jpg" target="_blank">
+                        <img class="absolute top-0 transform bg-surface-4 -translate-y-1/2 left-0 rounded-full aspect-square w-avatar border-4 border-text-1"
+                            src="images/profile.jpg" alt="Rafi" loading="eager" decoding="async">
+                    </a>
+
+                </picture>
+                <a rel="noopener noreferrer"
+                    class="hover:no-underline border-transparent focus:border-text-1 outline-transparent focus-visible:border-text-1 hover:border-text-1 border-4 rounded-full text-fluid--1 flex gap-x-1 items-center text-white bg-brand-fill px-3 py-1">
+                    <span class="font-bold">Follow</span>
+                </a>
+            </div>
+            <h1 class="text-fluid-3 flex gap-x-2 items-center font-bold">Muhammad Rafi
+                <span class="w-6 aspect-square inline-block" title="Verified">
+                    <img src="images/verified.svg" width="48" height="48" loading="eager" decoding="async">
+                </span>
+            </h1>
+            <div class="leading-tight">
+                <p class="mb-2">Mobile Developer • Full Stack Web Developer</p>
+            </div>
+            <span class="flex gap-x-4 items-center text-fluid--1 flex-wrap text-text-4">
+                <span class="flex items-center gap-1">
+                    <i class="fa  fa-map-marker" aria-hidden="true"></i>
+                    <span class="whitespace-nowrap">
+                        <span>Indonesia</span>
+                    </span>
+                </span>
+                <span class="flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                        <path
+                            d="M5.25 12a.75.75 0 01.75-.75h.01a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75H6a.75.75 0 01-.75-.75V12zM6 13.25a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75h.01a.75.75 0 00.75-.75V14a.75.75 0 00-.75-.75H6zM7.25 12a.75.75 0 01.75-.75h.01a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75H8a.75.75 0 01-.75-.75V12zM8 13.25a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75h.01a.75.75 0 00.75-.75V14a.75.75 0 00-.75-.75H8zM9.25 10a.75.75 0 01.75-.75h.01a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75H10a.75.75 0 01-.75-.75V10zM10 11.25a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75h.01a.75.75 0 00.75-.75V12a.75.75 0 00-.75-.75H10zM9.25 14a.75.75 0 01.75-.75h.01a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75H10a.75.75 0 01-.75-.75V14zM12 9.25a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75h.01a.75.75 0 00.75-.75V10a.75.75 0 00-.75-.75H12zM11.25 12a.75.75 0 01.75-.75h.01a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75H12a.75.75 0 01-.75-.75V12zM12 13.25a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75h.01a.75.75 0 00.75-.75V14a.75.75 0 00-.75-.75H12zM13.25 10a.75.75 0 01.75-.75h.01a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75H14a.75.75 0 01-.75-.75V10zM14 11.25a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75h.01a.75.75 0 00.75-.75V12a.75.75 0 00-.75-.75H14z" />
+                        <path fill-rule="evenodd"
+                            d="M5.75 2a.75.75 0 01.75.75V4h7V2.75a.75.75 0 011.5 0V4h.25A2.75 2.75 0 0118 6.75v8.5A2.75 2.75 0 0115.25 18H4.75A2.75 2.75 0 012 15.25v-8.5A2.75 2.75 0 014.75 4H5V2.75A.75.75 0 015.75 2zm-1 5.5c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-6.5c0-.69-.56-1.25-1.25-1.25H4.75z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <span class="whitespace-nowrap">Joined May 2000</span>
+                </span>
+            </span>
+        </div>
+    </header>
+    <main class="w-content max-w-full mv-0 mx-auto flex flex-col justify-center pt-4 gap-8">
+        <div data-tabs="true">
+            <ul class="max-w-full overflow-auto grid grid-flow-col auto-cols-[1fr] items-center text-fluid--1"
+                role="tablist">
+                <li class="flex-grow hover:bg-surface-2" role="presentation"><a href="#about" data-tab-active="true"
+                        class="font-bold grid place-items-center w-full h-full text-text-4 block hover:no-underline focus-visible:outline-0 focus-visible:bg-surface-2"
+                        role="tab" id="tab1" aria-selected="true">
+                        <span
+                            class="border-b-brand-stroke text-text-1 p-2 px-4 border-y-4 border-transparent">About</span>
+                    </a>
+                </li>
+                <li class="flex-grow hover:bg-surface-2" role="presentation"><a href="#experience"
+                        data-tab-active="false"
+                        class="font-bold grid place-items-center w-full h-full text-text-4 block hover:no-underline focus-visible:outline-0 focus-visible:bg-surface-2"
+                        role="tab" id="tab2" tabindex="-1">
+                        <span class="p-2 px-4 border-y-4 border-transparent">Experience</span>
+                    </a>
+                </li>
+                <li class="flex-grow hover:bg-surface-2" role="presentation"><a href="#skills" data-tab-active="false"
+                        class="font-bold grid place-items-center w-full h-full text-text-4 block hover:no-underline focus-visible:outline-0 focus-visible:bg-surface-2"
+                        role="tab" id="tab3" tabindex="-1">
+                        <span class="p-2 px-4 border-y-4 border-transparent">Skills</span>
+                    </a>
+                </li>
+                <li class="flex-grow hover:bg-surface-2" role="presentation"><a href="#portfolio"
+                        data-tab-active="false"
+                        class="font-bold grid place-items-center w-full h-full text-text-4 block hover:no-underline focus-visible:outline-0 focus-visible:bg-surface-2"
+                        role="tab" id="tab4" tabindex="-1">
+                        <span class="p-2 px-4 border-y-4 border-transparent">Portfolio</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <section data-tab-panel="true" id="/about" class="block" role="tabpanel" tabindex="-1" aria-labelledby="tab1">
+            <div class="grid gap-4">
+                <article
+                    class="card grid grid-cols-[auto_1fr] p-4 gap-2 rounded-lg max-w-full w-full hover:bg-surface-2">
+                    <div class="w-10 grid justify-end text-text-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-4 h-4">
+                            <path fill="currentColor" d="M16,12V4H17V2H7V4H8V12L6,14V16H11.2V22H12.8V16H18V14L16,12Z" />
+                        </svg>
+                    </div>
+                    <div class="items-center text-fluid--2 text-text-4">Pinned Article</div>
+                    <a class="w-10 h-10">
+                        <picture>
+                            <img src="images/profile.jpg" alt="Author image" class="rounded-full bg-surface-4"
+                                width="80" height="80" decoding="async" loading="lazy">
+                        </picture>
+                    </a>
+                    <div class="card__content grid gap-y-1 leading-tight">
+                        <div class="flex gap-x-2 text-fluid--1 items-center text-text-4">
+                            <p class="font-bold text-text-1">Rafi ✨</p>
+                            <span>•</span>
+                            <time class="text-fluid--2">30 May 2000</time>
+                        </div>
+                        <p class="mb-4">Hello! My name is Muhammad Rafi Bahrur Rizki and I enjoy with programming
+                            languages. My interest in programming languages ​​started in 2013 when I decided to develop
+                            an online private game server using PHP and MySQL.</p>
+                        <p class="mb-4">Since 2018, I have developed numerous mobile and web applications, encompassing
+                            e-commerce, humanitarian applications, Sharia savings and loans, educational game for
+                            preschoolers, and various others. Check out the "Portfolio" tab for more on that.</p>
+                        <p class="mb-4">Reach out and say "Hey!". I look forward to hearing from you!</p>
+                        <picture>
+                            <img class="rounded-lg" src="images/rafi.jpg" width="750" height="500" decoding="async"
+                                loading="lazy">
+                        </picture>
+                        <div class="card__actions flex justify-end items-center">
+                            <a title="Permalink"
+                                class="w-10 h-10 grid place-items-center hover:bg-surface-4 rounded-md text-text-2 hover:text-brand-stroke"
+                                href="/about.html">
+                                <span class="sr-only">Permalink</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M19.902 4.098a3.75 3.75 0 00-5.304 0l-4.5 4.5a3.75 3.75 0 001.035 6.037.75.75 0 01-.646 1.353 5.25 5.25 0 01-1.449-8.45l4.5-4.5a5.25 5.25 0 117.424 7.424l-1.757 1.757a.75.75 0 11-1.06-1.06l1.757-1.757a3.75 3.75 0 000-5.304zm-7.389 4.267a.75.75 0 011-.353 5.25 5.25 0 011.449 8.45l-4.5 4.5a5.25 5.25 0 11-7.424-7.424l1.757-1.757a.75.75 0 111.06 1.06l-1.757 1.757a3.75 3.75 0 105.304 5.304l4.5-4.5a3.75 3.75 0 00-1.035-6.037.75.75 0 01-.354-1z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                            <button title="Like post" disabled
+                                class="w-10 h-10 grid place-items-center rounded-md text-text-2 opacity-20">
+                                <span class="sr-only">Like</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section data-tab-panel="true" id="/experience" class="hidden" role="tabpanel" tabindex="-1"
+            aria-labelledby="tab2">
+            <div class="px-4">
+                <section class="mb-8">
+                    <h2 class="font-bold mb-2 text-fluid-1">PT S21 Micro Piranti</h2>
+                    <p class="mb-4">2022 - Present</p>
+                    <ul>
+                        <li class="mb-8">
+                            <p class="font-bold leading-tight mb-2">1. Smart Online Trading</p>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Convert the design into a Smart Online Trading application
+                                    using Flutter.</p>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Implement security features such as facial recognition,
+                                    fingerprint scanning, and transactions using a smart pin.</p>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Develop a chat feature for communication related to the
+                                    world of investment.</p>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Incorporate push notifications using Firebase messaging to
+                                    provide stock recommendations worth investing in.</p>
+                            </div>
+                        </li>
+                        <li class="mb-8">
+                            <p class="font-bold leading-tight mb-2">2. ONE Trade</p>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Convert the design into a ONE Trade application using
+                                    Flutter.</p>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Implement security features such as facial recognition,
+                                    fingerprint scanning, and transactions using a smart pin.</p>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Create reusable widgets to minimize redundant code.</p>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Implement data updates without the need to refresh the
+                                    current screen.</p>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Develop an account opening feature for prospective
+                                    customers.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <section class="mb-8">
+                    <h2 class="font-bold mb-2 text-fluid-1">Freelance</h2>
+                    <p class="mb-4">2019 - Present</p>
+                    <ul>
+                        <li class="mb-8">
+                            <div class="flex gap-x-2 items-center text-text-1 font-bold leading-tight mb-2">
+                                <span>1.</span>
+                                <a href="/portfolio/shopciety.html" class="hover:underline text-text-1">Shopciety
+                                </a>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Convert the design into a Shopciety application using
+                                    Java.</p>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Create a flash sale feature for a product within a
+                                    specific period of time.</p>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Develop recommended product features.</p>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Implement the payment gateway feature using Midtrans.</p>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Establish a shopping point feature.</p>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Develop a chat feature for buyers and sellers to
+                                    communicate.</p>
+                            </div>
+                        </li>
+                        <li class="mb-8">
+                            <div class="flex gap-x-2 items-center text-text-1 font-bold leading-tight mb-2">
+                                <span>2.</span>
+                                <a href="/portfolio/alisa.html" class="hover:underline text-text-1">Alisa
+                                </a>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Develop an application for monitoring agricultural
+                                    programs using Java and Realm Database.</p>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Implement a feature to generate QR codes from the master
+                                    data.</p>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Add a QR code scanning feature to view detailed
+                                    information.</p>
+                            </div>
+                        </li>
+                        <li class="mb-8">
+                            <div class="flex gap-x-2 items-center text-text-1 font-bold leading-tight mb-2">
+                                <span>3.</span>
+                                <a href="/portfolio/pickgoro.html" class="hover:underline text-text-1">Pickgoro
+                                </a>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Convert the design into a Social Asistence application
+                                    using Kotlin and Cloud Firestore.</p>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Allow donors to donate food, clothing, or money to nearby
+                                    foundations.</p>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Create user levels with varying access.</p>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Add a donation tracking feature.</p>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Implement a feature to thank and pray for donors after the
+                                    foundation receives their donations.</p>
+                            </div>
+                        </li>
+                        <li class="mb-8">
+                            <div class="flex gap-x-2 items-center text-text-1 font-bold leading-tight mb-2">
+                                <span>4.</span>
+                                <a href="/portfolio/gemapaud.html" class="hover:underline text-text-1">GemaPaud
+                                </a>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Convert the design into an educational game for young
+                                    children using Kotlin.</p>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Include volume and music settings features.</p>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Enable online game, audio, and video file downloads to be
+                                    played offline.</p>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Add rating and review features for each game.</p>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Develop a list of downloaded games, audio, and video
+                                    features.</p>
+                            </div>
+                        </li>
+                        <li class="mb-8">
+                            <div class="flex gap-x-2 items-center text-text-1 font-bold leading-tight mb-2">
+                                <span>5.</span>
+                                <a href="/portfolio/healthy.html" class="hover:underline text-text-1">Healthy
+                                </a>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Develop an application for monitoring agricultural
+                                    programs using Java and Realm Database.</p>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Monitor oxygen levels, blood pressure, and body
+                                    temperature with live graphs.</p>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Establish multiple user levels with varying levels of
+                                    access.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <section class="mb-8">
+                    <h2 class="font-bold mb-2 text-fluid-1">PT Asia Surya Persada</h2>
+                    <p class="mb-4">2020 - 2022</p>
+                    <ul>
+                        <li class="mb-8">
+                            <div class="flex gap-x-2 items-center text-text-1 font-bold leading-tight mb-2">
+                                <span>1.</span>
+                                <a href="/portfolio/stockcount.html" class="hover:underline text-text-1">Stock Count
+                                </a>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Create a warehouse management application using Java and
+                                    Cloud Firestore to simplify the process of finding or counting goods.</p>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Implement a barcode scanning feature to accelerate the
+                                    input of item data into the master data and retrieve item data.</p>
+                            </div>
+                        </li>
+                        <li class="mb-8">
+                            <p class="font-bold leading-tight mb-2">2. Aishara</p>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Create an e-commerce platform that facilitates buying and
+                                    selling transactions using Next.js, Strapi, and PostgreSQL.</p>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Implement a payment confirmation feature via WhatsApp.</p>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Provide a user-friendly interface for sellers to input
+                                    goods through a separate controller.</p>
+                            </div>
+                        </li>
+                        <li class="mb-8">
+                            <div class="flex gap-x-2 items-center text-text-1 font-bold leading-tight mb-2">
+                                <span>3.</span>
+                                <a href="https://dev.barelanglaluanmadani.com/" target="_blank"
+                                    class="hover:underline text-text-1">Sharia Savings and Loans BLM
+                                </a>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Create a Sharia-compliant savings and loan web application
+                                    to facilitate installment-based purchases using ReactJS and NodeJS.</p>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Develop credit simulation features for for electronics,
+                                    vehicles, and even venture capital.</p>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Implement a messaging feature to inform borrowers of
+                                    upcoming installment due dates.</p>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Include a monthly cash flow feature for all customers.</p>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Incorporate a dividend feature that pays out any profits
+                                    obtained by the cooperative to the committee.</p>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Calculate the cooperative's annual profit and loss.</p>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Create a blog feature containing information about the
+                                    cooperative.</p>
+                            </div>
+                        </li>
+                        <li class="mb-8">
+                            <div class="flex gap-x-2 items-center text-text-1 font-bold leading-tight mb-2">
+                                <span>4.</span>
+                                <a href="/portfolio/village.html" class="hover:underline text-text-1">Village
+                                    Information
+                                </a>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Create a village management web application to help
+                                    improve villages using ReactJS and NodeJS.</p>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Add a blog feature containing village information.</p>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Implement electronic securities features with templates
+                                    provided, such as business licenses, transfer letters, and others.</p>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Add a securities approval feature for village officials.
+                                </p>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Implement a securities status feature to track the
+                                    processing of the securities until completion.</p>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Create an e-mail feature between residents and village
+                                    officials.</p>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-text-3 mb-2" style="position: relative;">
+                                <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                                <p style="margin-left: 25px;">Display the profile, history, data, officials, vision, and
+                                    mission of the village.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+        <section data-tab-panel="true" id="/skills" class="hidden" role="tabpanel" tabindex="-1" aria-labelledby="tab3">
+            <div class="grid gap-4">
+                <article
+                    class="card grid grid-cols-[auto_1fr] p-4 gap-2 rounded-lg max-w-full w-full hover:bg-surface-2">
+                    <div class="w-10 h-10">
+                        <picture>
+                            <img src="images/flutter.png" alt="Author avatar" class="rounded-full" width="80"
+                                height="80" decoding="async" loading="lazy">
+                        </picture>
+                        <span class="sr-only">Mobile Development</span>
+                    </div>
+                    <div class="card__content grid gap-y-1 leading-tight" style="margin-left: 5px;">
+                        <p class="font-bold text-text-1 mb-2">Mobile Development</p>
+                        <div class="flex gap-x-2 items-center text-text-3" style="position: relative;">
+                            <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                            <p style="margin-left: 20px;">Flutter</p>
+                        </div>
+                        <div class="flex gap-x-2 items-center text-text-3" style="position: relative;">
+                            <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                            <p style="margin-left: 20px;">Java</p>
+                        </div>
+                        <div class="flex gap-x-2 items-center text-text-3" style="position: relative;">
+                            <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                            <p style="margin-left: 20px;">Kotlin</p>
+                        </div>
+                    </div>
+                </article>
+                <article
+                    class="card grid grid-cols-[auto_1fr] p-4 gap-2 rounded-lg max-w-full w-full hover:bg-surface-2">
+                    <div class="w-10 h-10">
+                        <picture>
+                            <img src="images/desktop.png" alt="Author avatar" class="rounded-full" width="80"
+                                height="80" decoding="async" loading="lazy">
+                        </picture>
+                        <span class="sr-only">Front End Web Development</span>
+                    </div>
+                    <div class="card__content grid gap-y-1 leading-tight" style="margin-left: 5px;">
+                        <p class="font-bold text-text-1 mb-2">Front End Web Development</p>
+                        <div class="flex gap-x-2 items-center text-text-3" style="position: relative;">
+                            <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                            <p style="margin-left: 20px;">ReactJS</p>
+                        </div>
+                        <div class="flex gap-x-2 items-center text-text-3" style="position: relative;">
+                            <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                            <p style="margin-left: 20px;">NextJS</p>
+                        </div>
+                    </div>
+                </article>
+                <article
+                    class="card grid grid-cols-[auto_1fr] p-4 gap-2 rounded-lg max-w-full w-full hover:bg-surface-2">
+                    <div class="w-10 h-10">
+                        <picture>
+                            <img src="images/database.png" alt="Author avatar" class="rounded-full" width="80"
+                                height="80" decoding="async" loading="lazy">
+                        </picture>
+                        <span class="sr-only">Back End Web Development</span>
+                    </div>
+                    <div class="card__content grid gap-y-1 leading-tight" style="margin-left: 5px;">
+                        <p class="font-bold text-text-1 mb-2">Back End Web Development</p>
+                        <div class="flex gap-x-2 items-center text-text-3" style="position: relative;">
+                            <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                            <p style="margin-left: 20px;">NodeJS</p>
+                        </div>
+                        <div class="flex gap-x-2 items-center text-text-3" style="position: relative;">
+                            <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                            <p style="margin-left: 20px;">PostgreSQL</p>
+                        </div>
+                    </div>
+                </article>
+                <article
+                    class="card grid grid-cols-[auto_1fr] p-4 gap-2 rounded-lg max-w-full w-full hover:bg-surface-2">
+                    <div class="w-10 h-10">
+                        <picture>
+                            <img src="images/tools.png" alt="Author avatar" class="rounded-full" width="80" height="80"
+                                decoding="async" loading="lazy">
+                        </picture>
+                        <span class="sr-only">Additional Development</span>
+                    </div>
+                    <div class="card__content grid gap-y-1 leading-tight" style="margin-left: 5px;">
+                        <p class="font-bold text-text-1 mb-2">Additional Development</p>
+                        <div class="flex gap-x-2 items-center text-text-3" style="position: relative;">
+                            <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                            <p style="margin-left: 20px;">Git</p>
+                        </div>
+                        <div class="flex gap-x-2 items-center text-text-3" style="position: relative;">
+                            <span class="font-bold" style="position: absolute; top: 0; margin-left: 5px;">•</span>
+                            <p style="margin-left: 20px;">Cloud Firestore</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section data-tab-panel="true" id="/portfolio" class="hidden" role="tabpanel" tabindex="-1"
+            aria-labelledby="tab4">
+            <div class="grid gap-4">
+                <article
+                    class="card grid grid-cols-[auto_1fr] p-4 gap-2 rounded-lg max-w-full w-full hover:bg-surface-2">
+                    <div class="w-10 h-10">
+                        <picture>
+                            <img src="images/profile.jpg" alt="Author avatar" class="rounded-full" width="80"
+                                height="80" decoding="async" loading="lazy">
+                        </picture>
+                        <span class="sr-only">Healthy</span>
+                    </div>
+                    <div class="card__content grid gap-y-1 leading-tight" style="margin-left: 5px;">
+                        <div class="flex gap-x-2 text-fluid--1 items-center text-text-4 mb-2">
+                            <p class="font-bold text-text-1">Rafi ✨</p>
+                            <span>•</span>
+                            <time class="text-fluid--2">Apr 2023</time>
+                        </div>
+                        <h2 class="font-bold text-text-1 mb-2 text-fluid-1">Healthy</h2>
+                        <p class="mb-4">
+                            Healthy is a health monitoring application that automatically inputs data from specialized
+                            devices. It features multi-level user access, including administrators and patients.
+                        </p>
+                        <p class="mb-4">Administrators can manage the data, while patients can monitor their own health
+                            data.</p>
+                        <p class="mb-4">Patients can track their blood pressure, body temperature, and oxygen levels.
+                            Additionally,
+                            the application includes live graphs for easy monitoring of health data.</p>
+                        <picture>
+                            <img class="rounded-lg" src="images/healthy.png" width="750" height="500" decoding="async"
+                                loading="lazy">
+                        </picture>
+                        <div class="card__actions flex justify-end items-center">
+                            <a title="Permalink"
+                                class="w-10 h-10 grid place-items-center hover:bg-surface-4 rounded-md text-text-2 hover:text-brand-stroke"
+                                href="/portfolio/healthy.html">
+                                <span class="sr-only">Permalink</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M19.902 4.098a3.75 3.75 0 00-5.304 0l-4.5 4.5a3.75 3.75 0 001.035 6.037.75.75 0 01-.646 1.353 5.25 5.25 0 01-1.449-8.45l4.5-4.5a5.25 5.25 0 117.424 7.424l-1.757 1.757a.75.75 0 11-1.06-1.06l1.757-1.757a3.75 3.75 0 000-5.304zm-7.389 4.267a.75.75 0 011-.353 5.25 5.25 0 011.449 8.45l-4.5 4.5a5.25 5.25 0 11-7.424-7.424l1.757-1.757a.75.75 0 111.06 1.06l-1.757 1.757a3.75 3.75 0 105.304 5.304l4.5-4.5a3.75 3.75 0 00-1.035-6.037.75.75 0 01-.354-1z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                            <button title="Like post" disabled
+                                class="w-10 h-10 grid place-items-center rounded-md text-text-2 opacity-20">
+                                <span class="sr-only">Like</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article
+                    class="card grid grid-cols-[auto_1fr] p-4 gap-2 rounded-lg max-w-full w-full hover:bg-surface-2">
+                    <div class="w-10 h-10">
+                        <picture>
+                            <img src="images/profile.jpg" alt="Author avatar" class="rounded-full" width="80"
+                                height="80" decoding="async" loading="lazy">
+                        </picture>
+                        <span class="sr-only">GemaPaud</span>
+                    </div>
+                    <div class="card__content grid gap-y-1 leading-tight" style="margin-left: 5px;">
+                        <div class="flex gap-x-2 text-fluid--1 items-center text-text-4 mb-2">
+                            <p class="font-bold text-text-1">Rafi ✨</p>
+                            <span>•</span>
+                            <time class="text-fluid--2">Oct 2021</time>
+                        </div>
+                        <h2 class="font-bold text-text-1 mb-2 text-fluid-1">GemaPaud</h2>
+                        <p class="mb-4">Gemapaud is an educational game for preschoolers with a funny and unique
+                            theme, aimed at keeping them engaged while increasing their knowledge.
+                        </p>
+                        <p class="mb-4">This educational game includes an offline mode feature, allowing it to be
+                            played anytime and anywhere.
+                        </p>
+                        <picture>
+                            <img class="rounded-lg" src="images/gemapaud.png" width="750" height="500" decoding="async"
+                                loading="lazy">
+                        </picture>
+                        <div class="card__actions flex justify-end items-center">
+                            <a title="Permalink"
+                                class="w-10 h-10 grid place-items-center hover:bg-surface-4 rounded-md text-text-2 hover:text-brand-stroke"
+                                href="/portfolio/gemapaud.html">
+                                <span class="sr-only">Permalink</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M19.902 4.098a3.75 3.75 0 00-5.304 0l-4.5 4.5a3.75 3.75 0 001.035 6.037.75.75 0 01-.646 1.353 5.25 5.25 0 01-1.449-8.45l4.5-4.5a5.25 5.25 0 117.424 7.424l-1.757 1.757a.75.75 0 11-1.06-1.06l1.757-1.757a3.75 3.75 0 000-5.304zm-7.389 4.267a.75.75 0 011-.353 5.25 5.25 0 011.449 8.45l-4.5 4.5a5.25 5.25 0 11-7.424-7.424l1.757-1.757a.75.75 0 111.06 1.06l-1.757 1.757a3.75 3.75 0 105.304 5.304l4.5-4.5a3.75 3.75 0 00-1.035-6.037.75.75 0 01-.354-1z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                            <button title="Like post" disabled
+                                class="w-10 h-10 grid place-items-center rounded-md text-text-2 opacity-20">
+                                <span class="sr-only">Like</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article
+                    class="card grid grid-cols-[auto_1fr] p-4 gap-2 rounded-lg max-w-full w-full hover:bg-surface-2">
+                    <div class="w-10 h-10">
+                        <picture>
+                            <img src="images/profile.jpg" alt="Author avatar" class="rounded-full" width="80"
+                                height="80" decoding="async" loading="lazy">
+                        </picture>
+                        <span class="sr-only">Pickgoro</span>
+                    </div>
+                    <div class="card__content grid gap-y-1 leading-tight" style="margin-left: 5px;">
+                        <div class="flex gap-x-2 text-fluid--1 items-center text-text-4 mb-2">
+                            <p class="font-bold text-text-1">Rafi ✨</p>
+                            <span>•</span>
+                            <time class="text-fluid--2">Apr 2021</time>
+                        </div>
+                        <h2 class="font-bold text-text-1 mb-2 text-fluid-1">Pickgoro</h2>
+                        <p class="mb-4">Pickgoro is a charity application that supports foundations by collecting
+                            donations in the form of money, food, and clothing, with the aim of assisting fellow humans
+                            in need.
+                        </p>
+                        <p class="mb-4"> The application includes a feature that allows users to detect the nearest
+                            foundations, helping them determine where their donations will be directed.
+                        </p>
+                        <p class="mb-4"> One exceptional feature of Pickgoro is the ability to express gratitude and
+                            offer prayers to donors once the foundation has received their donations.
+                        </p>
+                        <picture>
+                            <img class="rounded-lg" src="images/pickgoro.jpg" width="750" height="500" decoding="async"
+                                loading="lazy">
+                        </picture>
+                        <div class="card__actions flex justify-end items-center">
+                            <a title="Permalink"
+                                class="w-10 h-10 grid place-items-center hover:bg-surface-4 rounded-md text-text-2 hover:text-brand-stroke"
+                                href="/portfolio/pickgoro.html">
+                                <span class="sr-only">Permalink</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M19.902 4.098a3.75 3.75 0 00-5.304 0l-4.5 4.5a3.75 3.75 0 001.035 6.037.75.75 0 01-.646 1.353 5.25 5.25 0 01-1.449-8.45l4.5-4.5a5.25 5.25 0 117.424 7.424l-1.757 1.757a.75.75 0 11-1.06-1.06l1.757-1.757a3.75 3.75 0 000-5.304zm-7.389 4.267a.75.75 0 011-.353 5.25 5.25 0 011.449 8.45l-4.5 4.5a5.25 5.25 0 11-7.424-7.424l1.757-1.757a.75.75 0 111.06 1.06l-1.757 1.757a3.75 3.75 0 105.304 5.304l4.5-4.5a3.75 3.75 0 00-1.035-6.037.75.75 0 01-.354-1z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                            <button title="Like post" disabled
+                                class="w-10 h-10 grid place-items-center rounded-md text-text-2 opacity-20">
+                                <span class="sr-only">Like</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article
+                    class="card grid grid-cols-[auto_1fr] p-4 gap-2 rounded-lg max-w-full w-full hover:bg-surface-2">
+                    <div class="w-10 h-10">
+                        <picture>
+                            <img src="images/profile.jpg" alt="Author avatar" class="rounded-full" width="80"
+                                height="80" decoding="async" loading="lazy">
+                        </picture>
+                        <span class="sr-only">Village</span>
+                    </div>
+                    <div class="card__content grid gap-y-1 leading-tight" style="margin-left: 5px;">
+                        <div class="flex gap-x-2 text-fluid--1 items-center text-text-4 mb-2">
+                            <p class="font-bold text-text-1">Rafi ✨</p>
+                            <span>•</span>
+                            <time class="text-fluid--2">Mar 2021</time>
+                        </div>
+                        <h2 class="font-bold text-text-1 mb-2 text-fluid-1">Village Information System</h2>
+                        <p class="mb-4">
+                            The Village Information System is a village management application that offers multiple
+                            features. It allows for structured and organized data collection of the village residents.
+                            It also handles various official documents such as business permits, address change
+                            requests, marriage certificates, and more.
+                        </p>
+                        <p class="mb-4">The application includes an official blog
+                            showcasing village activities. It displays the village's vision and mission, as well as
+                            annual statistical data about the village. In summary, the application streamlines village
+                            management, facilitates document management, promotes community engagement, and provides
+                            valuable information for decision-making and planning.</p>
+                        <picture>
+                            <img class="rounded-lg" src="images/village.png" width="750" height="500" decoding="async"
+                                loading="lazy">
+                        </picture>
+                        <div class="card__actions flex justify-end items-center">
+                            <a title="Permalink"
+                                class="w-10 h-10 grid place-items-center hover:bg-surface-4 rounded-md text-text-2 hover:text-brand-stroke"
+                                href="/portfolio/village.html">
+                                <span class="sr-only">Permalink</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M19.902 4.098a3.75 3.75 0 00-5.304 0l-4.5 4.5a3.75 3.75 0 001.035 6.037.75.75 0 01-.646 1.353 5.25 5.25 0 01-1.449-8.45l4.5-4.5a5.25 5.25 0 117.424 7.424l-1.757 1.757a.75.75 0 11-1.06-1.06l1.757-1.757a3.75 3.75 0 000-5.304zm-7.389 4.267a.75.75 0 011-.353 5.25 5.25 0 011.449 8.45l-4.5 4.5a5.25 5.25 0 11-7.424-7.424l1.757-1.757a.75.75 0 111.06 1.06l-1.757 1.757a3.75 3.75 0 105.304 5.304l4.5-4.5a3.75 3.75 0 00-1.035-6.037.75.75 0 01-.354-1z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                            <button title="Like post" disabled
+                                class="w-10 h-10 grid place-items-center rounded-md text-text-2 opacity-20">
+                                <span class="sr-only">Like</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article
+                    class="card grid grid-cols-[auto_1fr] p-4 gap-2 rounded-lg max-w-full w-full hover:bg-surface-2">
+                    <div class="w-10 h-10">
+                        <picture>
+                            <img src="images/profile.jpg" alt="Author avatar" class="rounded-full" width="80"
+                                height="80" decoding="async" loading="lazy">
+                        </picture>
+                        <span class="sr-only">Alisa</span>
+                    </div>
+                    <div class="card__content grid gap-y-1 leading-tight" style="margin-left: 5px;">
+                        <div class="flex gap-x-2 text-fluid--1 items-center text-text-4 mb-2">
+                            <p class="font-bold text-text-1">Rafi ✨</p>
+                            <span>•</span>
+                            <time class="text-fluid--2">Apr 2020</time>
+                        </div>
+                        <h2 class="font-bold text-text-1 mb-2 text-fluid-1">Alisa</h2>
+                        <p class="mb-4">Alisa is an application designed for monitoring agricultural programs. It allows
+                            users to input data, which is then generated into QR codes. The application also provides a
+                            feature to store master data, making it easier for users to retrieve the necessary
+                            information. Additionally, it includes a QR code reader feature to view the saved data.
+                        </p>
+                        <picture>
+                            <img class="rounded-lg" src="images/alisa.png" width="750" height="500" decoding="async"
+                                loading="lazy">
+                        </picture>
+                        <div class="card__actions flex justify-end items-center">
+                            <a title="Permalink"
+                                class="w-10 h-10 grid place-items-center hover:bg-surface-4 rounded-md text-text-2 hover:text-brand-stroke"
+                                href="/portfolio/alisa.html">
+                                <span class="sr-only">Permalink</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M19.902 4.098a3.75 3.75 0 00-5.304 0l-4.5 4.5a3.75 3.75 0 001.035 6.037.75.75 0 01-.646 1.353 5.25 5.25 0 01-1.449-8.45l4.5-4.5a5.25 5.25 0 117.424 7.424l-1.757 1.757a.75.75 0 11-1.06-1.06l1.757-1.757a3.75 3.75 0 000-5.304zm-7.389 4.267a.75.75 0 011-.353 5.25 5.25 0 011.449 8.45l-4.5 4.5a5.25 5.25 0 11-7.424-7.424l1.757-1.757a.75.75 0 111.06 1.06l-1.757 1.757a3.75 3.75 0 105.304 5.304l4.5-4.5a3.75 3.75 0 00-1.035-6.037.75.75 0 01-.354-1z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                            <button title="Like post" disabled
+                                class="w-10 h-10 grid place-items-center rounded-md text-text-2 opacity-20">
+                                <span class="sr-only">Like</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article
+                    class="card grid grid-cols-[auto_1fr] p-4 gap-2 rounded-lg max-w-full w-full hover:bg-surface-2">
+                    <div class="w-10 h-10">
+                        <picture>
+                            <img src="images/profile.jpg" alt="Author avatar" class="rounded-full" width="80"
+                                height="80" decoding="async" loading="lazy">
+                        </picture>
+                        <span class="sr-only">Shopciety</span>
+                    </div>
+                    <div class="card__content grid gap-y-1 leading-tight" style="margin-left: 5px;">
+                        <div class="flex gap-x-2 text-fluid--1 items-center text-text-4 mb-2">
+                            <p class="font-bold text-text-1">Rafi ✨</p>
+                            <span>•</span>
+                            <time class="text-fluid--2">Dec 2019</time>
+                        </div>
+                        <h2 class="font-bold text-text-1 mb-2 text-fluid-1">Shopciety</h2>
+                        <p class="mb-4">Shopciety is an E-commerce platform that helps consumers to do online shopping
+                            for premium grade products from abroad. Consumers can directly choose the products that
+                            Shopciety offers, or products from other websites. With this digital shopping platform,
+                            consumers can easily buy products through an easy process.</p>
+                        <p class="mb-4">
+                            All purchases and product shipments are conducted by Door-to-Door-Service, which means that
+                            it will not complicate consumers from the beginning of the purchase process until the order
+                            is received at the shipping address.</p>
+                        <picture>
+                            <img class="rounded-lg" src="images/shopciety.jpg" width="750" height="500" decoding="async"
+                                loading="lazy">
+                        </picture>
+                        <div class="card__actions flex justify-end items-center">
+                            <a title="Permalink"
+                                class="w-10 h-10 grid place-items-center hover:bg-surface-4 rounded-md text-text-2 hover:text-brand-stroke"
+                                href="/portfolio/shopciety.html">
+                                <span class="sr-only">Permalink</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M19.902 4.098a3.75 3.75 0 00-5.304 0l-4.5 4.5a3.75 3.75 0 001.035 6.037.75.75 0 01-.646 1.353 5.25 5.25 0 01-1.449-8.45l4.5-4.5a5.25 5.25 0 117.424 7.424l-1.757 1.757a.75.75 0 11-1.06-1.06l1.757-1.757a3.75 3.75 0 000-5.304zm-7.389 4.267a.75.75 0 011-.353 5.25 5.25 0 011.449 8.45l-4.5 4.5a5.25 5.25 0 11-7.424-7.424l1.757-1.757a.75.75 0 111.06 1.06l-1.757 1.757a3.75 3.75 0 105.304 5.304l4.5-4.5a3.75 3.75 0 00-1.035-6.037.75.75 0 01-.354-1z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                            <button title="Like post" disabled
+                                class="w-10 h-10 grid place-items-center rounded-md text-text-2 opacity-20">
+                                <span class="sr-only">Like</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article
+                    class="card grid grid-cols-[auto_1fr] p-4 gap-2 rounded-lg max-w-full w-full hover:bg-surface-2">
+                    <div class="w-10 h-10">
+                        <picture>
+                            <img src="images/profile.jpg" alt="Author avatar" class="rounded-full" width="80"
+                                height="80" decoding="async" loading="lazy">
+                        </picture>
+                        <span class="sr-only">Stock Count</span>
+                    </div>
+                    <div class="card__content grid gap-y-1 leading-tight" style="margin-left: 5px;">
+                        <div class="flex gap-x-2 text-fluid--1 items-center text-text-4 mb-2">
+                            <p class="font-bold text-text-1">Rafi ✨</p>
+                            <span>•</span>
+                            <time class="text-fluid--2">Jul 2019</time>
+                        </div>
+                        <h2 class="font-bold text-text-1 mb-2 text-fluid-1">Stock Count</h2>
+                        <p class="mb-4">Stock Count is an Inventory counting & checking apps to help you perform the
+                            stock physical inventory and cycle count fast, effectively and efficiently anytime anywhere.
+                        </p>
+                        <picture>
+                            <img class="rounded-lg" src="images/stockcount.png" width="750" height="500"
+                                decoding="async" loading="lazy">
+                        </picture>
+                        <div class="card__actions flex justify-end items-center">
+                            <a title="Permalink"
+                                class="w-10 h-10 grid place-items-center hover:bg-surface-4 rounded-md text-text-2 hover:text-brand-stroke"
+                                href="/portfolio/stockcount.html">
+                                <span class="sr-only">Permalink</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M19.902 4.098a3.75 3.75 0 00-5.304 0l-4.5 4.5a3.75 3.75 0 001.035 6.037.75.75 0 01-.646 1.353 5.25 5.25 0 01-1.449-8.45l4.5-4.5a5.25 5.25 0 117.424 7.424l-1.757 1.757a.75.75 0 11-1.06-1.06l1.757-1.757a3.75 3.75 0 000-5.304zm-7.389 4.267a.75.75 0 011-.353 5.25 5.25 0 011.449 8.45l-4.5 4.5a5.25 5.25 0 11-7.424-7.424l1.757-1.757a.75.75 0 111.06 1.06l-1.757 1.757a3.75 3.75 0 105.304 5.304l4.5-4.5a3.75 3.75 0 00-1.035-6.037.75.75 0 01-.354-1z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                            <button title="Like post" disabled
+                                class="w-10 h-10 grid place-items-center rounded-md text-text-2 opacity-20">
+                                <span class="sr-only">Like</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="w-content max-w-full mv-0 mx-auto py-8 text-text-3">
+        <div class="text-fluid--2 grid place-items-center gap-y-2 w-full">
+            <!-- <div class="flex flex-wrap justify-center">
+                <a class="text-text-2 w-10 h-10 grid place-items-center rounded-md hover:bg-surface-4"
+                    href="https://www.linkedin.com/in/rafibahrur" rel="noopener noreferrer" target="_blank"
+                    title="See what I'm making on Github">
+                    <i class="fa fa-linkedin-square"></i>
+                </a>
+                <a href="https://gitlab.com/rafibatam" target="_blank">
+                    <i class="bx bxl-gitlab"></i>
+                </a>
+                <a class="text-text-2 w-10 h-10 grid place-items-center rounded-md hover:bg-surface-4"
+                    href="https://github.com/rafibatam" rel="noopener noreferrer" target="_blank"
+                    title="See what I'm making on Github">
+                    <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24" role="img">
+                        <title>Github icon</title>
+                        <path
+                            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                    </svg>
+                </a>
+                <a href="https://drive.google.com/file/d/1-yIXqWHxpL96Kge_fs0SLxyjIrV2wEu_/view?usp=sharing" class="cv"
+                    target="_blank">
+                    <i class="bx bxs-book"></i>
+                </a>
+            </div> -->
+            <div>
+                Muhammad Rafi Bahrur Rizki ©
+                <span>2023</span>
+            </div>
+        </div>
+    </footer>
+    <script>!function () { const e = document.querySelector("[data-tabs]"), a = e.querySelector("ul"), i = (e.querySelectorAll("span"), [...e.querySelectorAll("[href]")]), l = document.querySelectorAll("[data-tab-panel]"), s = (e.removeAttribute("role"), a.setAttribute("role", "tablist"), (e, t) => { t.focus(), t.removeAttribute("tabindex"), t.dataset.tabActive = !0, t.querySelector("span").classList.add("border-b-brand-stroke", "text-text-1"), t.setAttribute("aria-selected", "true"), e.removeAttribute("aria-selected"), e.setAttribute("tabindex", "-1"), e.querySelector("span").classList.remove("border-b-brand-stroke", "text-text-1"), e.dataset.tabActive = !1; t = i.indexOf(t), e = i.indexOf(e); l[e].className = "hidden", l[t].className = "block" }); i.forEach((e, r) => { var t = "true" === e.dataset.tabActive; e.setAttribute("role", "tab"), e.setAttribute("id", "tab" + (r + 1)), t || e.setAttribute("tabindex", "-1"), t && e.setAttribute("aria-selected", !0), e.parentNode.setAttribute("role", "presentation"), e.href = "#" + e.getAttribute("href").slice(1), e.addEventListener("click", e => { e.preventDefault(); var t = a.querySelector("[aria-selected]"); e.currentTarget !== t && s(t, e.currentTarget) }), e.addEventListener("keydown", e => { var t = i.indexOf(e.currentTarget), t = 37 === e.which ? t - 1 : 39 === e.which ? t + 1 : 40 === e.which ? "down" : null; null !== t && (e.preventDefault(), "down" === t ? l[r].focus() : i[t] && s(e.currentTarget, i[t])) }) }), l.forEach((e, t) => { e.setAttribute("role", "tabpanel"), e.setAttribute("tabindex", "-1"), e.getAttribute("id"), e.setAttribute("aria-labelledby", i[t].id) }) }()
+    </script>
+</body>
+
+</html>
